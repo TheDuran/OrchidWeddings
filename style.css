@@ -1,0 +1,250 @@
+/* Applica las fuentes y ajusta el Body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  padding-top: 70px; /* prevent content hiding behind fixed navbar */
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #b89e60;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Parallax Background */
+.parallax-wrapper {
+  background-image: url('images/parallax-bg.jpg'); /* use a high-res elegant image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.glass-section1 {
+  background-color: rgba(255, 255, 255, 0.25); /* semi-transparent white */
+  backdrop-filter: blur(3px); /* optional soft blur */
+  padding: 60px 0;
+}
+
+.glass-section2 {
+  background-color: rgba(250, 199, 90, 0.25); /* semi-transparent white */
+  backdrop-filter: blur(3px); /* optional soft blur */
+  padding: 60px 0;
+}
+
+
+/* Esta seccion es para la Barra de Navegacion */
+.navbar .nav-link {
+  color: #555;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #b89e60;
+}
+
+.navbar-brand {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+}
+
+
+/* Esta seccion es para Boton de Musica */
+#music-toggle {
+  transition: all 0.3s ease;
+  border: 1px solid #b89e60;
+  color: #b89e60;
+  background-color: transparent;
+}
+
+#music-toggle:hover {
+  background-color: gold;
+  color: white;
+}
+
+
+/* Esta seccion es para Home/Contador */
+#hero {
+  height: 100vh;
+  /*background: linear-gradient(to bottom right, #fff 70%, #fdf6e3);*/
+  color: #333;
+  padding: 2rem;
+}
+
+#countdown span {
+  font-size: 2rem;
+  color: #b89e60;
+}
+
+#countdown small {
+  display: block;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+
+/* Esta seccion es para la frase Romantica */
+#love-quote {
+  position: relative;
+}
+
+#love-quote::before {
+  content: "❝";
+  font-size: 4rem;
+  color: #e7d5a4;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  opacity: 0.2;
+}
+
+#love-quote::after {
+  content: "❞";
+  font-size: 4rem;
+  color: #e7d5a4;
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  opacity: 0.2;
+}
+
+
+/* Esta seccion es para la Locacion */
+#locations h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+#locations img {
+  width: 50px;
+  height: 50px;
+}
+
+#locations p {
+  font-size: 1rem;
+  color: #5c5c5c;
+}
+
+#locations .shadow-sm {
+  transition: all 0.3s ease;
+}
+
+#locations .shadow-sm:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(184, 158, 96, 0.2);
+}
+
+
+.timeline {
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 2px solid #e7d5a4;
+  padding-left: 20px;
+  position: relative;
+}
+
+
+/* Esta seccion es para el Itinerario */
+.timeline-event {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-event::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #b89e60;
+  border-radius: 50%;
+  position: absolute;
+  left: -9px;
+  top: 0;
+}
+
+.timeline-time {
+  font-weight: bold;
+  color: #b89e60;
+}
+
+.timeline-details {
+  color: #5c5c5c;
+}
+
+
+/* Esta seccion es para la Galeria Pareja*/
+.gallery-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img img {
+  transition: transform 0.4s ease;
+  border-radius: 10px;
+}
+
+.gallery-img:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-img::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(184, 158, 96, 0.2);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-img:hover::after {
+  opacity: 1;
+}
+
+
+
+.btn-success {
+  background-color: #25d366;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+  background-color: #1ebc59;
+  transform: scale(1.05);
+}
+
+
+
+
+/* Esta seccion es para el Pie de Pagina y los links de Redes Sociales */
+footer i:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  color: #d4af37;
+}
+
+#contact input,
+#contact textarea {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #b89e60;
+  box-shadow: 0 0 5px rgba(184, 158, 96, 0.5);
+  outline: none;
+}
+
+
+
